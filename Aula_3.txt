@@ -1,0 +1,240 @@
+    1  cd Desktop/GITClone/GIT/
+    2  git checkout rebase
+    3  git log
+    4  git log --pretty=oneline --graph
+    5  git checkout master
+    6  git log --pretty=oneline --graph
+    7  history
+    8  cd  ..
+    9  cd Videos/GIT\ refeito/
+   10  ls
+   11  mkdir Aula\ 1 Aula\ 4 Aula\ 5 Aula\ 6 Aula\ 7 Aula\ 8
+   12  ls
+   13  clear
+   14  cd ..
+   15  cd ..
+   16  cd Desktop/
+   17  clear
+   18  git config --global user.name 'Kauê Maia'
+   19  git config user.name
+   20  git config --global user.email 'kaue.maia@gmail.com'
+   21  cd ..
+   22  git config user.name
+   23  git config --global color.ui true
+   24  clear
+   25  cd Desktop/
+   26  mkdir CursoGIT
+   27  ls
+   28  mv CursoGIT/ GIT
+   29  ls
+   30  cd GIT/
+   31  git status
+   32  ls -a
+   33  git init
+   34  ls 
+   35  ls -a
+   36  git status
+   37  touch Arq1.txt
+   38  ls
+   39  git status
+   40  git add Arq1.txt 
+   41  ls
+   42  git status
+   43  git rm --cached Arq1.txt 
+   44  git status
+   45  touch Arq2.txt
+   46  ls
+   47  git status
+   48  git add .
+   49  git status
+   50  git restore --staged Arq2.txt
+   51  git commit -m 'iniciando git com arq1 e arq2'
+   52  git status
+   53  cat > Arq1.txt 
+   54  cat Arq1.txt 
+   55  git status 
+   56  git add .
+   57  git status
+   58  git restore --staged Arq1.txt
+   59  git status
+   60  git commit -am 'Descricao do Arq1'
+   61  git status
+   62  git log
+   63  git log --pretty=oneline
+   64  git log --stat
+   65  nano Arq1.txt 
+   66  git status
+   67  git commit -am 'Editando descricao do Arq1'
+   68  git log --stat
+   69  git log -p
+   70  git log -p -1
+   71  git log -p -1 --pretty=oneline
+   72  git log --author='Joaozinho'
+   73  git log --author='Kauê Maia'
+   74  git log --author='Kauê maia'
+   75  git log --since=2.minutes
+   76  git log --since=40.minutes
+   77  git log -p -1 --pretty=oneline
+   78  git log -p  --pretty=oneline
+   79  git log --pretty=oneline
+   80  git reset --soft HEAD~1
+   81  git log
+   82  git status
+   83  git commit -am 'Editando descricao do Arq1'
+   84  git log
+   85  git reset --hard 1ff2da58fa91f271f631591cce01109d1add48c2
+   86  git log
+   87  git reset --hard 1ff2d
+   88  git branch
+   89  git reset --hard '1ff2da58fa91f271f631591cce01109d1add48c'
+   90  git reset --hard "1ff2da58fa91f271f631591cce01109d1add48"
+   91  git log --pretty=oneline
+   92  git rebase --abort
+   93  git reflog
+   94  git reset --hard c0f6750
+   95  git reflog
+   96  git log
+   97  git status
+   98  mkdir .vscode
+   99  ls
+  100  ls -a
+  101  git status
+  102  mkdir .vscode2
+  103  git status
+  104  rm -r .vscode2
+  105  ls
+  106  ls -a
+  107  rm -r .vscode
+  108  clear
+  109  touch .vscode/conf.txt
+  110  mkdir .vscode
+  111  touch .vscode/conf.txt
+  112  git status
+  113  echo '.vscode/' > .gitignore
+  114  git status
+  115  git add .gitignore 
+  116  git commit -m 'Adicionando gitignore com a pasta do vscode'
+  117  git status
+  118  touch conf.pessoal
+  119  git status 
+  120  echo 'conf.pessoal' >> .gitignore 
+  121  git status
+  122  git commit -am 'Adicionado no gitignore conf.pessoal'
+  123  git status
+  124  clear
+  125  git remote add origin https://github.com/KaueMaia/GIT.git
+  126  it
+  127  ls -a
+  128  ls
+  129  git
+  130  clear
+  131  git remote add origin https://github.com/KaueMaia/GIT.git
+  132  git remote
+  133  git pull 
+  134  origin master 
+  135  git pull origin master
+  136  clear
+  137  git remote add origin https://github.com/KaueMaia/GIT.git
+  138  git remote remove origin 
+  139  clear
+  140  git remote add origin https://github.com/KaueMaia/GIT.git
+  141  git remote
+  142  git pull origin master
+  143  git push -u origin master
+  144  clear
+  145  ssh-keygen -t rsa -b 4096 -C "kaue.maia@gmail.com"
+  146  ls ~/.ssh
+  147  cat ~/.ssh/id_rsa.pub
+  148  cd ..
+  149  mkdir GITClone
+  150  cd GITClone/
+  151  ls
+  152  git clone git@github.com:KaueMaia/GIT.git
+  153  ls
+  154  cd GIT/
+  155  git log
+  156  clear
+  157  git branch
+  158  git checkout -b feature
+  159  git branch
+  160  git status
+  161  git checkout master
+  162  git checkout -D feature
+  163  git branch -D feature
+  164  git branch
+  165  ls
+  166  cat >> Arq2.txt
+  167  git status
+  168  git commit -am 'ainda na master'
+  169  git status
+  170  git checkout -b merge
+  171  cat >> Arq2.txt
+  172  git status
+  173  git commit -am 'Commit com Merge'
+  174  git log
+  175  git checkout master
+  176  git log
+  177  cat >> Arq1.txt
+  178  git status
+  179  git commit -am 'Nova alteracao na master depois da merge'
+  180  git merge merge 
+  181  git log
+  182  git log --pretty=oneline --graph
+  183  git checkout -b rebase
+  184  cat >> Arq2.txt
+  185  git commit -am 'Feito na rebase'
+  186  git checkout master
+  187  cat >> Arq1.txt
+  188  git log
+  189  git commit -am 'Feito depois da rebase'
+  190  git log --pretty=oneline
+  191  git checkout rebase
+  192  git log --pretty=oneline
+  193  git checkout master
+  194  git rebase rebase
+  195  git log --pretty=oneline
+  196  git log
+  197  git clear
+  198  clear
+  199  git log --pretty=oneline
+  200  git log --pretty=oneline --graph
+  201  clear
+  202  git log --pretty=oneline --graph
+  203  clear
+  204  git log --pretty=oneline --graph
+  205  clear
+  206  git config --global user.name 'Kauê Maia'
+  207  git config --global user.email 'kaue.maia@gmail.com
+'
+  208  git config --global user.email 'kaue.maia@gmail.com'
+  209  git config user.name
+  210  cd Desktop/
+  211  mkdir Curso_Git
+  212  cd Curso_Git/
+  213  git config user.name
+  214  git init
+  215  git status
+  216  echo '#Aprendendo usar o Git' > readme.md
+  217  git status
+  218  git add readme.md 
+  219  git status
+  220  git commit -m 'Commit inicial'
+  221  git status
+  222  echo '##Aula 1' >> readme.md 
+  223  git status
+  224  echo 'Kauê Maia' > participantes.txt
+  225  git status
+  226  git add .
+  227  git status
+  228  git restore --staged participantes.txt
+  229  git status
+  230  git add participantes.txt 
+  231  git status
+  232  git restore --staged .
+  233  git status
+  234  git commit -am 'Alteração no readme'
+  235  git status
+  236  git add participantes.txt 
+  237  git status
+  238  git commit -m 'Adicionado participantes.txt'
+  239  history > Aula_3.txt
