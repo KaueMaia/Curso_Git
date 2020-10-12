@@ -21,6 +21,11 @@ Instalamos o Git e vimos alguns comandos
 
 O que foi que eu aprendi aqui?
 
+Aprendi a configurar globalmente o Git.
+Aprendi a criar um repositório local com Git.
+Entendi os 4 estados do ciclo de vida dos arquivos.
+Aprendi a usar os meus primeiros comandos!.
+
 ## Aula 4
 
 O que foi que eu aprendi aqui?
