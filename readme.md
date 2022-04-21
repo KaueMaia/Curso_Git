@@ -50,3 +50,5 @@ aprendi organizar melhor meus projetos
 O que foi que eu aprendi aqui?
 
 aprendi fazer um fork e trazer pro meu propio repositor
+
+### Turma 15 - Ptogramação Full Stack (Exercicio 9 - Versionamento de Código Git)
