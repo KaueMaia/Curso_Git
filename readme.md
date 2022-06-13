@@ -36,7 +36,7 @@ O que foi que eu aprendi aqui?
 ## Aula 7
 
 O que foi que eu aprendi aqui?
-
+Trabei com um erro de password authentication e foi removido criando um token!
 
 ## Aula 8
 
