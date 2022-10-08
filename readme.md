@@ -37,6 +37,11 @@ O que foi que eu aprendi aqui?
 
 O que foi que eu aprendi aqui?
 
+Aprendemos a configurar globalmente o GIT
+
+Aprendemos a iniciar um repositório global GIT
+
+Aprendemos os 4 estados de ciclo de vida de um arquivo
 
 ## Aula 8
 
