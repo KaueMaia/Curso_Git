@@ -8,5 +8,6 @@
     8  git logpg
     9  git checkout master
    10  git rebase feature
-   11  git logpg
+   11  git logp
    12  history > Aula_6.txt
+   
